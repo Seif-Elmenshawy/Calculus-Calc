@@ -1,0 +1,68 @@
+@font-face {
+    font-family: ubuntu;
+    src: url(/assets/fonts/Ubuntu-Medium.ttf);
+}
+:root{
+    --main-font:ubuntu;
+    --main-font-color:white;
+}
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+body{
+     background-image: linear-gradient(to right bottom, #2e7d32, #267c38, #1f7a3d, #167942, #0d7747, #06764b, #02744f, #007353, #007157, #00705a, #006e5d, #006c60);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #2E7D32;
+    font-family: var(--main-font);
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    padding: 10px;
+}
+.nav-item{
+    text-decoration-line: none;
+    color: #2E7D32;
+    padding:10px;
+    border: 2px solid transparent;
+    border-radius: 7px;
+
+}
+.nav-item:hover{
+    border:2px solid #2E7D32;
+    transition: 0.2s ease-in-out;
+    border-radius: 7px;
+}
+.active{
+    background-color: #2E7D32;
+    color: white;
+}
+.hero{
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    background-color: white;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding:30px 20px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
