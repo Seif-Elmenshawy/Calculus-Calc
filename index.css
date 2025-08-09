@@ -15,6 +15,9 @@ body{
      background-image: linear-gradient(to right bottom, #2e7d32, #267c38, #1f7a3d, #167942, #0d7747, #06764b, #02744f, #007353, #007157, #00705a, #006e5d, #006c60);
      background-repeat: no-repeat;
      background-size: cover;
+     font-family: var(--main-font);
+     color: var(--main-font-color);
+     height: 100vh;
 }
 nav{
     display: flex;
@@ -59,6 +62,7 @@ nav li{
     display: flex;
     flex-direction: column;
     margin: 50px auto;
+    color: #2E7D32;
     background-color: white;
     width: fit-content;
     justify-content: center;
@@ -127,4 +131,50 @@ footer{
     align-items: center;
     font-family: var(--main-font);
     color: var(--secondry-font-color);
+}
+.contactus{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contactus h1,h2{
+    margin:20px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+}
+form input, textarea{
+    width: 30%;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+form div{
+    margin: 50px;
+}
+.Send{
+    font-family: var(--main-font);
+    background-color: var(--secondry-font-color);
+    color: var(--main-font-color);
+    font-size: 15px;
+    padding:10px 20px;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.clear{
+    background-color: white;
+    color: var(--secondry-font-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding:10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
 }
