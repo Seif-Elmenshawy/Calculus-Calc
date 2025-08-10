@@ -11,6 +11,9 @@
     box-sizing: border-box;
     margin: auto;
 }
+main{
+    margin-top: 130px;
+}
 body{
      background-image: linear-gradient(to right bottom, #2e7d32, #267c38, #1f7a3d, #167942, #0d7747, #06764b, #02744f, #007353, #007157, #00705a, #006e5d, #006c60);
      background-repeat: no-repeat;
@@ -26,6 +29,9 @@ nav{
     flex-wrap: wrap;
     color: #2E7D32;
     font-family: var(--main-font);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 nav ul{
     display: flex;
@@ -58,9 +64,9 @@ nav li{
 }
 .hero{
     font-family: var(--main-font);
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
-    margin: 50px auto;
     color: #2E7D32;
     background-color: white;
     width: fit-content;
@@ -193,4 +199,66 @@ form div{
 .other-part img{
     width: 12%;
     margin: 50px 25px;
+}
+.heading{
+    display:flex;
+    flex-direction:row ;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.heading img{
+    width: 10%;
+    margin: 0;
+    margin-left: 20px;
+}
+.heading h1{
+    width: 300px;
+    margin: 0;
+    margin-left:20px;
+}
+.int-h3{
+    text-align: center;
+}
+.probleminp{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin:40px 10px 40px auto;
+    border-radius: 10px;
+    width: 70%;
+    aspect-ratio:21/1;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: large;
+}
+.problem button{
+    color: var(--secondry-font-color);
+    background-color: var(--main-font-color);
+    border:none;
+    font-weight: bold;
+    font-size: large;
+    height: calc(70% / 21);
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin:40px auto 40px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.problem button:active {
+  box-shadow: none;
+  transition: 0.1s ease-in-out;
+  transform: scale(0.95);
+}
+.problem{
+    display: flex;
+    flex-direction: row;
+}
+.integral-calc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px ;
+}
+.integral-calc h4{
 }
