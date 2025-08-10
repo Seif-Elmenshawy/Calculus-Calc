@@ -29,7 +29,7 @@
         </div>
         <h3 class="int-h3">Welcome to the integral calculator! Type your integral expression below to be solved.</h3>
         <div class="problem" action="">
-            <input class="probleminp" type="text" id="integration" placeholder="Type youy problem">
+            <input class="probleminp" type="text" id="integration" oninput="fetchintegrationData()" placeholder="Type youy problem">
             <button onclick="fetchintegrationData()">Submit</button>
         </div>
         <h4 id="intgrateresult">The result is:</h4>
@@ -43,7 +43,7 @@
         </div>
         <h3 class="int-h3">Welcome to the Derivative calculator! Type your Derivative expression below to be solved.</h3>
         <div class="problem" action="">
-            <input class="probleminp" type="text" id="derivativequestion" placeholder="Type youy problem">
+            <input class="probleminp" type="text" id="derivativequestion" oninput="fetchDerivativeData()" placeholder="Type youy problem">
             <button onclick="fetchDerivativeData()">Submit</button>
         </div>
         <h4 id="derivativeans">The result is: </h4>

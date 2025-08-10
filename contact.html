@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
-    <main>
+    
     <nav id="nav" class="nav">
       <h1>Calculus Calculator</h1>
       <ul>
@@ -18,15 +18,16 @@
       </ul>
       <button onclick="changetheme()">Change theme</button>
     </nav>
+    <main id="main">
     <section class="contactus">
         <h1>Contact us</h1>
         <h2>Your opinion is important for us. Feel free to tell us your opinion</h2>
-        <form action="">
-            <input type="text" placeholder="Please enter your name">
-            <input type="email" placeholder="Enter your email">
-            <textarea placeholder="type your message here"></textarea>
+        <form id="contact" onsubmit="submit()" action="">
+            <input type="text" placeholder="Please enter your name" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <textarea placeholder="type your message here" required></textarea>
             <div>
-            <button class="Send" type="submit">Send</button>
+            <button class="Send" id="submit" type="submit">Send</button>
             <button class="clear" type="reset">Clear</button></div>
         </form>
     </section>
@@ -47,10 +48,10 @@
             <a href=""><img src="github.svg" alt="Moaz's Github account"></a>  </div>
         </div>
     </section>
+    </main>
 <footer id="footer">
         <p>Made with ❤️ By Seif & Moaz</p>
     </footer>
-    </main>
     <script src="main.js"></script>
 </body>
 </html>
