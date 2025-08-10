@@ -28,7 +28,7 @@ async function fetchDerivativeData(){
             throw new Error("Couldn't fetch the data");
         }
         const data= await response.json();
-        const result = document.getElementById("derivativeans");
+        const result = document.getElementById("intgrateresult");
         const answer = data.result;
         result.innerText=answer;
 
@@ -36,4 +36,10 @@ async function fetchDerivativeData(){
     catch(error){
         console.error(error);
     }
+}
+function changetheme(){
+    const nav = document.getElementById("nav");
+    nav.classList.toggle("darktheme")
+    document.getElementById("footer").classList.toggle("darktheme")
+    document.getElementsById("hero").classList.toggle("darktheme")
 }
