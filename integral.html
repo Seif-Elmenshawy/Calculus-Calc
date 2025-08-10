@@ -27,11 +27,11 @@
             <h1>Integral Calculator</h1>
         </div>
         <h3 class="int-h3">Welcome to the integral calculator! Type your integral expression below to be solved.</h3>
-        <form class="problem" action="">
-            <input class="probleminp" type="text" placeholder="Type youy problem">
-            <button>Submit</button>
-        </form>
-        <h4>The result is: </h4>
+        <div class="problem" action="">
+            <input class="probleminp" type="text" id="integration" placeholder="Type youy problem">
+            <button onclick="fetchData()">Submit</button>
+        </div>
+        <h4 id="intgrateresult">The result is:</h4>
     </section>
     <section class="integral-calc">
         <div class="heading">
@@ -49,5 +49,6 @@
         <p>Made with ❤️ By Seif & Moaz</p>
     </footer>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
