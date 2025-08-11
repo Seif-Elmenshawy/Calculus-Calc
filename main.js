@@ -22,7 +22,7 @@ async function fetchDerivativeData(){
     try{
         const integralQuestion = document.getElementById("derivativequestion").value.toLowerCase().trim();
         const encoded = encodeURIComponent(integralQuestion)
-        const response= await fetch(`https://newton.vercel.app/api/v2/integrate/${encoded}`);
+        const response= await fetch(`https://newton.vercel.app/api/v2/derivative/${encoded}`);
         
         if(!response.ok){
             throw new Error("Couldn't fetch the data");
@@ -70,7 +70,7 @@ document.getElementById("contact").addEventListener("submit", function(event) {
 
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("contact").addEventListener("submit", function(event) {
-  event.preventDefault(); // prevent the form from submitting/reloading
+  event.preventDefault();
   document.getElementById("main").style.display = "none";
 
   const newHeading = document.createElement("h1");
